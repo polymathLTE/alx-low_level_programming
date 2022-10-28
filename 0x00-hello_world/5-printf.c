@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
+ * main - This displays a short message using
+ * (printf)
+ *
+ * Return: (0) success
  */
 
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-
-	return (0);
+char msg[] = "with proper grammar, but the outcome is a piece of art,\n";
+printf("%s", msg);
+return (0);
 }

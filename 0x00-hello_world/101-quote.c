@@ -1,15 +1,17 @@
-
 #include <stdio.h>
-#include <string.h>
-#include <unistd.h>
+
 /**
- *  * main -Entry point
- *   * Description: 'A new project abot using puts with special symbols'
- *    * Return: Always 1 (success)
+ * main - Entry point
+ *
+ * Description - This task uses the fprintf method to
+ * display a message and special symbols
+ *
+ * Return: (1) undefined
  */
+
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-
-	return (1);
+char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+fprintf(stdout, "%s", msg);
+return (1);
 }
