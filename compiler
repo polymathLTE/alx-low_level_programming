@@ -1,0 +1,7 @@
+#!/bin/bash
+
+file=$1
+option=$2
+name=$3
+
+gcc $file -Wall -Werror -Wextra -pedantic -std=gnu89 $option $name
