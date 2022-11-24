@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * add - function
+ * @num1 - number to be added
+ * @num2 - number to be added
+ *
+ * Description: adds two integers and returns the result
+ *
+ * Return: (val) computed value
+ */
+
+int add(int num1, int num2)
+{
+	int val;
+
+	val = num1 + num2;
+	return (val);
+}
