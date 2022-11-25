@@ -18,7 +18,7 @@ int largest_number(int a, int b, int c)
 	lrg[2] = c;
 
 	largest = 0;
-	size = sizeof lrg / sizeof *lrg;
+	size = sizeof(lrg) / sizeof(*lrg);
 
 	for (i = 0; i < size; i++)
 	{
