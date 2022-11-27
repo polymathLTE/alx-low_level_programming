@@ -12,7 +12,7 @@ void more_numbers(void)
 {
 	int no_times, no_incr;
 
-	for (no_times = 0; no_times <= 10; no_times++)
+	for (no_times = 0; no_times < 10; no_times++)
 	{
 		for (no_incr = 0; no_incr <= 14; no_incr++)
 		{

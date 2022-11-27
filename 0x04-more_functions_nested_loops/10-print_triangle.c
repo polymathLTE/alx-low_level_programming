@@ -27,9 +27,9 @@ void print_triangle(int size)
 						_putchar(' ');
 					}
 					_putchar('#');
-					size_ref--;
 					continue;
 				}
+				_putchar('$');
 				if (i == size)
 				{
 					for (; i <= size; i++)
