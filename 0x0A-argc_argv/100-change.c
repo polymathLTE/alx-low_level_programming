@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * main - entry point
  * @argc: arguments count
@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	/*declare variables*/
-	int cent, val;
+	int cent, val, i;
 	int cent_arr[] = {25, 10, 5, 2, 1};
 
 	/*(void) unused variables*/
@@ -31,36 +31,17 @@ int main(int argc, char **argv)
 
 	/*count change*/
 	cent = atoi(argv[1]);
-	val = get_change(cent, cent_arr);
-	printf("%d\n", val);
-	return (0);
-
-}
-
-/**
- * get_change - counts num of coins
- * @cent: change to compute (int)
- * @cent_ary: array of coin types
- *
- * Description: counts the number of coins that can be found in @cent
- *
- * Return: (val) number of coins
- */
-
-int get_change(int cent, int cent_ary[])
-{
-	int val = 0;
-	int i;
-
+	val = 0;
 	for (i = 0; i < 5; i++)
 	{
 		if (cent == 0)
-			return (val);
-		if (cent >= cent_ary[i])
+			break;
+		if (cent >= cent_arr[i])
 		{
-			val += cent / cent_ary[i];
-			cent = cent % cent_ary[i];
+			val += cent / cent_arr[i];
+			cent = cent % cent_arr[i];
 		}
 	}
-	return (val);
+	printf("%d\n", val);
+	return (0);
 }
