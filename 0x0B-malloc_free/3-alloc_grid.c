@@ -25,7 +25,7 @@ int **alloc_grid(int width, int height)
 		return (grid);
 
 	/*assigns the dim. of the 2D array - row*/
-	for (i = 0; i <= height; i++)
+	for (i = 0; i <= width; i++)
 	{
 		grid[i] = (int *)malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
