@@ -19,21 +19,21 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	/*assigns the dim. of the 2D array - column*/
-	grid = (int **)malloc(sizeof(int *) * height);
+	grid = malloc(sizeof(int *) * height);
 
 	if (grid == NULL)
 		return (grid);
 
 	/*assigns the dim. of the 2D array - row*/
-	for (i = 0; i <= width; i++)
+	for (i = 0; i <= height; i++)
 	{
-		grid[i] = (int *)malloc(sizeof(int) * width);
+		grid[i] = malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
 		{
 			/*free the occupied memory*/
+			for (i--; i >= 0; i--)
+				free(grid[i]);
 			free(grid);
-			for (j = 0; j <= i; j++)
-				free(grid[j]);
 			return (NULL);
 		}
 
