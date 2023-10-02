@@ -1,4 +1,4 @@
 ~
-test_files/
-echo "compiler" >> .gitignore
-echo "del-emacs" >> .gitignore
+**test_files/
+**tmp
+**temp/
