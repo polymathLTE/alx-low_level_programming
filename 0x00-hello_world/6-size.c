@@ -11,8 +11,7 @@
 
 int main(void)
 {
-char msg1[], msg2[], msg3[];
-msg1[] = "Size of a";
-msg2[] = "Size of an";
-msg
+	char msg1[] = "Size of a";
+	char msg2[] = "Size of an";
+	printf("%s float is %ld bytes and %s integer is %ld", msg1, sizeof(double), msg2, sizeof(char));
 }
