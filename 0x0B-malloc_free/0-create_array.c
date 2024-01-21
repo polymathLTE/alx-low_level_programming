@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	/*creates an array of specified size*/
-	ar = malloc(sizeof(char) * size);
+	ar = malloc(size);
 
 	if (ar != NULL)
 	{
@@ -26,5 +26,4 @@ char *create_array(unsigned int size, char c)
 	}
 
 	return (NULL);
-	
 }
