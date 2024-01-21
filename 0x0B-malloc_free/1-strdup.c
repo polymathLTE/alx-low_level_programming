@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/*create new memspace*/
-	dup_str = malloc(sizeof(char) * strlen(str));
+	dup_str = malloc(sizeof(char) * strlen(str) + 1);
 
 	/*check for successful alloc*/
 	if (dup_str == NULL)
