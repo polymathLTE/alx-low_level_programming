@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 #include <string.h>
 
 /**
@@ -29,7 +29,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/*duplicates string to new memspace*/
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i < (int)strlen(str); i++)
 		dup_str[i] = str[i];
 
 	return (dup_str);
